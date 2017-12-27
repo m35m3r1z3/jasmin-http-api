@@ -1,0 +1,38 @@
+{
+    "name": "mannysoft/jasmin-http-api",
+    "description": "Laravel package for Jasmin SMS HTTP API.",
+    "keywords": [
+        "laravel",
+        "api",
+        "jasmin",
+        "sms"
+    ],
+    "authors": [
+        {
+            "name": "Manny Isles",
+            "email": "manny.isles@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "Mannysoft\\Jasmin\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Mannysoft\\Jasmin\\ServiceProvider"
+            ],
+            "aliases": {
+                "Jasmin": "Mannysoft\\Jasmin\\Facade"
+            }
+        }
+    },
+    "minimum-stability": "dev"
+}
